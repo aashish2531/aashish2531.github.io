@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!--
+<style>
+  /*
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+-->
+<style>
+  .content {
+  background-color: white;
+  padding: 5px;
+}
+  .row,
+.row > .column {
+  padding: 8px;
+}
+* {
+  box-sizing: border-box;
+}
+  #photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
+</style>
+</head>
+<body style="background-color: black;">
+  <div class="container row" style="color: white;">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <div class="container"></div><div class="col-md-9"></div>pan class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">Contact Us</a></li>
+        <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
+        <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Close</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>  
+</div>
+
+
+  <div class="row" style="margin-top: 14px;">
+    <div class="container col-md-2 col-sm-2" style="color: black;">
+  
+  <button class="btn btn-primary hidden visible-xs" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Collapse Button
+  </button>
+  
+  <div class="collapse dont-collapse-sm" id="collapseExample">
+    <div class="well">
+     <ul>
+    <li>
+      aashish
+    </li>
+    <li>
+      aashish
+    </li>
+    <li>
+      aashish
+    </li>
+    <li>
+      aashish
+    </li>
+    </ul>
+    </div>
+  </div>
+</div>
+  <section>
+  <div class="col-md-10 col-sm-10">
+<div class="row" id="photos">
+  <div class="column">
+    <div class="content">
+      <img src="f50cea34-c166-412d-ab93-db46bf0dc820.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="8ebfc98c-1457-4b2a-9bab-0944d6dac284.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="09161f2c-4525-4cf7-809d-7c02674403b6.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column">
+    <div class="content">
+      <img src="DSC_1541-02-01.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="IMG_20181123_111140_726.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="IMG_20190105_182045_550.jpg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="IMG_20190206_131045_266.jpg" alt="Nature" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="LRM_EXPORT_1510518263856_20190512_095947480.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column">
+    <div class="content">
+      <img src="LRM_EXPORT_22759279475070_20190508_102538923.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="LRM_EXPORT_24821863527819_20190415_101028427.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="LRM_EXPORT_30041968896021_20190507_115105907.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="LRM_EXPORT_84373743698594_20190410_181813846.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="2e6371c6-77b5-401c-bafd-c57f0c48e220.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="b2004744-e1c2-4001-b074-d155a05bbcbe.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="d8ff9936-9b7b-4deb-ab93-56f2596e9f8c.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="cc376e63-5ee0-4fa3-9d38-17f57347022b.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="4d89c473-2613-4d1a-a505-d5bb0fa55f8b.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="801fd670-749b-4b41-99e9-6aff904e3bdd.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
