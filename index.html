@@ -21,6 +21,79 @@
 body,h1 {font-family: "Raleway", Arial, sans-serif}
 h1 {letter-spacing: 6px}
 .w3-row-padding img {margin-bottom: 12px}
+  
+  .content {
+  background-color: white;
+  padding: 5px;
+}
+	.row,
+.row > .column {
+  padding: 8px;
+}
+* {
+  box-sizing: border-box;
+}
+	#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+li{
+	list-style: none;
+}
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
 </style>
 <body>
 
@@ -51,29 +124,103 @@ h1 {letter-spacing: 6px}
 </div>
 </div>
 <!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
-
-  <!-- Images (Portfolio) -->
-  <div class="w3-row-padding " style="margin-bottom:128px">
-  <div class="w3-half">
-    <img src="8ebfc98c-1457-4b2a-9bab-0944d6dac284.jpeg" style="width:100%">
-    <img src="09161f2c-4525-4cf7-809d-7c02674403b6.jpeg" style="width:100%">
-    <img src="DSC_1541-02-01.jpeg" style="width:100%">
-    <img src="b2004744-e1c2-4001-b074-d155a05bbcbe.jpeg" style="width:100%">
-    <img src="IMG_20190105_182045_550.jpg" style="width:100%">
-    <img src="c03a21e4-fe0f-4527-beee-d779e97742db.jpeg" style="width:100%">
-    <img src="c6a5f605-03f0-4917-92f4-a0848828e65b.jpeg" style="width:100%">
+  
+  <section>
+	<div class="container">
+<div class="row" id="photos">
+  <div class="column">
+    <div class="content">
+      <img src="f50cea34-c166-412d-ab93-db46bf0dc820.jpeg" alt="Mountains" style="width:100%">
+    </div>
   </div>
-
-  <div class="w3-half">
-    <img src="2e6371c6-77b5-401c-bafd-c57f0c48e220.jpeg" style="width:100%">
-    <img src="4d89c473-2613-4d1a-a505-d5bb0fa55f8b.jpeg" style="width:100%">
-    <img src="d8ff9936-9b7b-4deb-ab93-56f2596e9f8c.jpeg" style="width:100%">
-    <img src="f50cea34-c166-412d-ab93-db46bf0dc820.jpeg" style="width:100%">
-    <img src="801fd670-749b-4b41-99e9-6aff904e3bdd.jpeg" style="width:100%">
-    <img src="cc376e63-5ee0-4fa3-9d38-17f57347022b.jpeg" style="width:100%">
+  <div class="column">
+    <div class="content">
+    <img src="8ebfc98c-1457-4b2a-9bab-0944d6dac284.jpeg" alt="Lights" style="width:100%">
+    </div>
   </div>
+  <div class="column">
+    <div class="content">
+    <img src="09161f2c-4525-4cf7-809d-7c02674403b6.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column">
+    <div class="content">
+      <img src="DSC_1541-02-01.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="IMG_20181123_111140_726.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="IMG_20190105_182045_550.jpg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="IMG_20190206_131045_266.jpg" alt="Nature" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="LRM_EXPORT_1510518263856_20190512_095947480.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column">
+    <div class="content">
+      <img src="LRM_EXPORT_22759279475070_20190508_102538923.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="LRM_EXPORT_24821863527819_20190415_101028427.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="LRM_EXPORT_30041968896021_20190507_115105907.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="LRM_EXPORT_84373743698594_20190410_181813846.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="2e6371c6-77b5-401c-bafd-c57f0c48e220.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="b2004744-e1c2-4001-b074-d155a05bbcbe.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="d8ff9936-9b7b-4deb-ab93-56f2596e9f8c.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="cc376e63-5ee0-4fa3-9d38-17f57347022b.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="4d89c473-2613-4d1a-a505-d5bb0fa55f8b.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="801fd670-749b-4b41-99e9-6aff904e3bdd.jpeg" alt="Lights" style="width:100%">
+    </div>
+  </div>
+<!-- END GRID -->
 </div>
+</section>
 
   <!-- Contact -->
   <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
